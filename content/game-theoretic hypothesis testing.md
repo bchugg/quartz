@@ -3,7 +3,9 @@
 Specific protocols of [[game-theoretic probability]] can be used to test hypotheses. This yields a fundamental tool in [[game-theoretic statistics]]. 
 
 Suppose we receive data $X_1,X_2,\dots\sim P$ and we are testing the hypotheses: 
-$$ H_0: P\in \bs{P} \text{~ vs ~} H_1: P\in \bs{Q}.$$
+$$
+H_0: P\in \bs{P} \text{~ vs ~} H_1: P\in \bs{Q}.
+$$
 This is a general framework which encapsulates both point nulls (eg $\theta^* = 0$) and composite nulls (eg $\theta^* \in S$ for some set $S$). $\bs{P}$ and $\bs{Q}$ can be infinite sets of distributions, singletons, finite sets, etc. 
 
 The game proceeds as follows. 
@@ -14,7 +16,9 @@ For $t=1,\dots,T$:
 - Skeptic updates her wealth as $\cK_t = \cK_{t-1} S_t(X_t).$ 
 
 As usual in [[game-theoretic statistics]], this implies that $\cK_t = \prod_{i=1}^t S_i(X_i)$ is an [[e-process]] for $\bs{P}$. Under the null, the skeptic's wealth is therefore not expected to grow. Indeed, by [[Ville's inequality]], 
-$$ P(\forall t\geq 1: \cK_t \geq 1/\alpha) \leq \alpha \quad \forall P\in\bs{P}.$$
+$$
+P(\forall t\geq 1: \cK_t \geq 1/\alpha) \leq \alpha \quad \forall P\in\bs{P}.
+$$
 Therefore, if we reject the null when the $\cK_t$ exceeds $1/\alpha$, we have only an $\alpha$ probability of making an error, i.e., our type I error uniformly over time is bounded by $\alpha$. In other words, this is a level-$\alpha$ sequential test. 
 
 While this is framed as one-sample testing, we can also consider [[testing by betting—two-sample testing]]. 

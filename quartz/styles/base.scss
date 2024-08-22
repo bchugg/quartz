@@ -29,6 +29,10 @@ section {
   color: var(--darkgray);
 }
 
+.katex { 
+  font-size: 1em !important;
+}
+
 p,
 ul,
 text,
@@ -548,4 +552,8 @@ iframe.pdf {
   height: 100%;
   width: 100%;
   border-radius: 5px;
+}
+
+.popover { 
+  background-color: lightgray;
 }

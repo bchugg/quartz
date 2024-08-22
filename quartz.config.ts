@@ -23,20 +23,21 @@ const config: QuartzConfig = {
       cdnCaching: true,
       typography: {
         header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
+        //body: "Source Sans Pro",
+        body: "Lora",
         code: "IBM Plex Mono",
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#fff23688",
+          light: "#FFFFFF", // page background
+          lightgray: "#e5e5e5", // borders 
+          gray: "#25309c", // graph links 
+          darkgray: "#050505", // body text 
+          dark: "#2b2b2b", // header text and icons 
+          secondary: "#25309c", // link color, current graph node  
+          tertiary: "#4a4c5c", // hover states, visited graph nodes
+          highlight: "#fffff", // internal link background
+          textHighlight: "#25309c", // markdown highlighted text background
         },
         darkMode: {
           light: "#161618",
@@ -70,7 +71,16 @@ const config: QuartzConfig = {
       Plugin.TableOfContents(),
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
       Plugin.Description(),
-      Plugin.Latex({ renderEngine: "katex" }),
+      Plugin.Latex({ renderEngine: "katex", 
+        customMacros: {
+          "\\E": "\\mathbb{E}", 
+          "\\P": "\\mathbb{P}",
+          "\\Pr": "\\mathbb{P}",
+          "\\Var": "\\mathbb{V}",
+          "\\Cov": "\\text{Cov}",
+          "\\ov": "\\overline{#1}"
+        }
+        }),
     ],
     filters: [Plugin.RemoveDrafts()],
     emitters: [

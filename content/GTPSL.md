@@ -2,7 +2,9 @@
 # Designing Gamble spaces 
 
 Let $f_1, \dots, f_k, g_1,\dots,g_m:\Re\to\Re$. Set 
-$$\cZ = \{\omega\mapsto \sum_{i}\beta_i f_i(X(\omega)) + \sum_j \gamma_jg_j(X(\omega)) : \beta\in\Re^k, \gamma\in\Re^m_+. \}.$$
+$$
+\cZ = \{\omega\mapsto \sum_{i}\beta_i f_i(X(\omega)) + \sum_j \gamma_jg_j(X(\omega)) : \beta\in\Re^k, \gamma\in\Re^m_+. \}.
+$$
 If $\cZ$ is AF, then ${\E}f_i(X) = 0$ and $\ov{\E}[g_j(X)]\leq 0$ for all $i$ and $j$. 
 
 # Minimax theorem 
@@ -23,7 +25,9 @@ $\ov{\E}^0 X = \ov{\E}^{\Delta_0(\cZ)} X$ (for convenience).
 Thm: Let $(\Omega, \cZ)$ be measurable gamble space, $X$ be a measurable variable. Then 
 $\un{\E}^g X \leq \un{\E}^{mg}X$ and $\ov{\E}^{mg} X\leq \ov{\E}^g X$. 
 If $\Delta_0(\cZ)$ is nonempty, then 
-$$\un{\E}^g X \leq \un{\E}^{mg} X\leq \un{\E}^0 X \leq \ov{\E}^0 X\leq \ov{\E}^{mg}X\leq \ov{\E}^g X.$$
+$$
+\un{\E}^g X \leq \un{\E}^{mg} X\leq \un{\E}^0 X \leq \ov{\E}^0 X\leq \ov{\E}^{mg}X\leq \ov{\E}^g X.
+$$
 
 When are the first and last quantities equal? The q is when does the minimax theorem hold? (wait why is this?) 
 

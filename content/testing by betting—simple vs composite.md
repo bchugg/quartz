@@ -9,7 +9,7 @@ There are two general methods.
 
 # Plug-in method 
 
-Since the methods are inherently sequential and the payoff function $S_t$ (see [[game-theoretic hypothesis testing#Payoff functions]]) need only be $\cF_{t-1}$-measurable, we can employ the likelihood ratio test but change which $Q\in\Theta_1$ is used every time. That is, if $(X_t)\sim Q^*$, we can try and learn $Q^*$ over time. 
+Since the methods are inherently sequential and the payoff function $S_t$ (see [[game-theoretic hypothesis testing#Payoff functions|game-theoretic hypothesis testing-Payoff functions]]) need only be $\cF_{t-1}$-measurable, we can employ the likelihood ratio test but change which $Q\in\Theta_1$ is used every time. That is, if $(X_t)\sim Q^*$, we can try and learn $Q^*$ over time. 
 
 In particular, we can consider a payoff function $S_t = q_t(X_t|\cF_{t-1}) / p(X_t|\cF_{t-1})$. $Q_t$ can be chosen baed on $X_1,\dots,X_{t-1}$. Regardless of how it's chosen $S_t$ will remain a [[test-martingale]] for $P$. 
 (We are assuming densities are well-defined, otherwise we resort to Radon-Nikodym derivatives.)
