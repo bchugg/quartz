@@ -73,12 +73,51 @@ const config: QuartzConfig = {
       Plugin.Description(),
       Plugin.Latex({ renderEngine: "katex", 
         customMacros: {
-          "\\E": "\\mathbb{E}", 
+          "\\la": "\\langle", // General notation
+          "\\ra": "\\rangle",
+          "\\Re": "\\mathbb{R}", 
+          "\\eps": "\\epsilon",
+          "\\ind": "\\mathbf{1}",
+          "\\wh": "\\widehat{#1}",
+          "\\ov": "\\overline{#1}",
+          "\\un": "\\underline{#1}",
+          "\\range": "\\text{range}",
+          "\\d": "\\text{d}",
+          "\\argmin": "\\text{argmin}",
+          "\\argmax": "\\text{argmax}",
+          "\\dsphere": "\\mathbb{S}^{d-1}",
+          "\\bar": "\\overline{#1}",
+          "\\ball": "\\mathbb{B}",
+          "\\sphere": "\\mathbb{S}",
+          "\\dball": "\\ball^{d-1}",
+          "\\norm": "\\left|{#1}\\right|",
+
+          "\\diag": "\\text{diag}", // Algebra
+          "\\rank": "\\text{rank}",
+          "\\Tr": "\\text{Tr}",
+
+
+          "\\E": "\\mathbb{E}", // Probability
           "\\P": "\\mathbb{P}",
           "\\Pr": "\\mathbb{P}",
           "\\Var": "\\mathbb{V}",
           "\\Cov": "\\text{Cov}",
-          "\\ov": "\\overline{#1}"
+          "\\ess": "\\text{ess}",
+          "\\Ber": "\\textnormal{Ber}",
+          "\\Mspace": "\\mathcal{M}({#1})",
+
+          "\\kl": "D_{\\text{KL}}", // Information Theory
+          "\\tv": "\\text{TV}", 
+
+          "\\calE": "\\mathcal{E}",
+          "\\calA": "\\mathcal{A}",
+          "\\calX": "\\mathcal{X}",
+          "\\calF": "\\mathcal{F}",
+          
+
+          "\\bb": "\\mathbb{#1}",
+          "\\cal": "\\mathcal{#1}"
+          
         }
         }),
     ],
