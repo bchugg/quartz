@@ -1,1 +1,0 @@
-A complex square matrix that is equal to its own [[conjugate transpose]]. Also called a self-adjoint matrix. 

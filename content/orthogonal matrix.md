@@ -1,1 +1,0 @@
-An orthogonal matrix $A$ is a matrix such that $AA^\top = A^\top A = I$. That is, its transpose is equal to its inverse. Also called an orthonormal matrix. 
