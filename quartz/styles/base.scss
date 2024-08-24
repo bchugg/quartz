@@ -564,14 +564,18 @@ iframe.pdf {
   background-color: lightgray;
 }
 
+
+// Explorer 
+#explorer-content {
+  .folder-outer {
+    font-size: 0.9em;
+    a {
+      font-weight: 100;
+    }
+  }
+}
 .mobile-only {
     #explorer-content {
       height: 300px;
-      .folder-outer {
-        font-size: 0.9em;
-        a {
-          font-weight: 100;
-        }
-      }
     }
 }
