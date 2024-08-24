@@ -54,6 +54,29 @@ def reformat_subsection_links(file_path):
     with open(file_path, 'w') as file:
         file.writelines(updated_lines)
 
+def add_space_to_header(file_path):
+    # Open the file and read all lines
+    with open(file_path, 'r') as file:
+        lines = file.readlines()
+
+    # Create a list to store the updated lines
+    updated_lines = []
+
+    # Iterate through each line in the file
+    for line in lines:
+        
+        # Add current line 
+        updated_lines.append(line)
+
+        # Add space after line if it is a header
+        if line.startswith('---'):
+            updated_lines.append('\n')
+        
+
+    # Write the updated lines back to the file
+    with open(file_path, 'w') as file:
+        file.writelines(updated_lines)
+
 
 if __name__ == '__main__':
     # reformat markdown on all markdown files in content directory
@@ -61,3 +84,4 @@ if __name__ == '__main__':
         if file.endswith('.md'):
             reformat_latex(os.path.join('../content', file))
             reformat_subsection_links(os.path.join('../content', file))
+            add_space_to_header(os.path.join('../content', file))

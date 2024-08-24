@@ -91,6 +91,8 @@ const config: QuartzConfig = {
           "\\sphere": "\\mathbb{S}",
           "\\dball": "\\ball^{d-1}",
           "\\norm": "\\left|{#1}\\right|",
+          "\\image": "\\text{image}",
+          "\\lap": "\\text{Lap}",
 
           "\\diag": "\\text{diag}", // Algebra
           "\\rank": "\\text{rank}",
@@ -109,15 +111,36 @@ const config: QuartzConfig = {
           "\\kl": "D_{\\text{KL}}", // Information Theory
           "\\tv": "\\text{TV}", 
 
-          "\\calE": "\\mathcal{E}",
+          "\\calE": "\\mathcal{E}", // Cals 
           "\\calA": "\\mathcal{A}",
-          "\\calX": "\\mathcal{X}",
           "\\calF": "\\mathcal{F}",
-          
+          "\\calH": "\\mathcal{H}",
+          "\\calX": "\\mathcal{X}",
+          "\\calG": "\\mathcal{G}",
+          "\\calR": "\\mathcal{R}",
+          "\\calQ": "\\mathcal{Q}",
+          "\\calP": "\\mathcal{P}",
+          "\\calB": "\\mathcal{B}",
+          "\\calL": "\\mathcal{L}",
+          "\\calD": "\\mathcal{D}",
+          "\\calZ": "\\mathcal{Z}",
+          "\\calC": "\\mathcal{C}",
+          "\\calN": "\\mathcal{N}",
+          "\\calM": "\\mathcal{M}",
+          "\\calS": "\\mathcal{S}",
+          "\\calT": "\\mathcal{T}",
+          "\\calU": "\\mathcal{U}",
+          "\\calV": "\\mathcal{V}",
+          "\\calW": "\\mathcal{W}",
+          "\\calY": "\\mathcal{Y}",
+          "\\calK": "\\mathcal{K}",
+          "\\calI": "\\mathcal{I}",
+          "\\calO": "\\mathcal{O}",
+          "\\calJ": "\\mathcal{J}",
 
-          "\\bb": "\\mathbb{#1}",
-          "\\cal": "\\mathcal{#1}"
-          
+          "\\bb": "\\mathbb{#1}",    // General bold and cal notation
+          "\\cal": "\\mathcal{#1}",
+          "\\bs": "\\boldsymbol{#1}", 
         }
         }),
     ],
