@@ -37,7 +37,8 @@ const config: QuartzConfig = {
           secondary: "#25309c", // link color, current graph node  
           tertiary: "#4a4c5c", // hover states, visited graph nodes
           highlight: "#fffff", // internal link background
-          textHighlight: "#25309c", // markdown highlighted text background
+          // textHighlight: "#25309c", // markdown highlighted text background
+          textHighlight: "#fffff", // markdown highlighted text background
         },
         darkMode: {
           light: "#161618",
