@@ -30,13 +30,30 @@ export default (() => {
           </>
         )}
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta property="og:title" content={title} />
-        <meta property="og:description" content={description} />
-        {cfg.baseUrl && <meta property="og:image" content={ogImagePath} />}
-        <meta property="og:width" content="1200" />
-        <meta property="og:height" content="675" />
         <link rel="icon" href={iconPath} />
         <meta name="description" content={description} />
+
+        {/* FB OG protocol */}
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content={ogImagePath} />
+        {/* {cfg.baseUrl && <meta property="og:image" content={ogImagePath} />} */}
+        <meta property="og:width" content="1200" />
+        <meta property="og:height" content="675" />
+        
+
+        {/* Twitter  */}
+        <meta name="twitter:card" content={description} />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content={ogImagePath} />
+
+        {/* Google  */}
+        <meta name="keywords" content="statistics, zettelkasten, machine learning" />
+        <meta name="author" content="Ben Chugg" />
+        <meta name="copyright" content="Ben Chugg" />
+        <meta name="application-name" content="The Stats Map" />
+
         <meta name="generator" content="Quartz" />
         {css.map((href) => (
           <link key={href} href={href} rel="stylesheet" type="text/css" spa-preserve />
