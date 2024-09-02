@@ -113,6 +113,7 @@ const config: QuartzConfig = {
 
           "\\kl": "D_{\\text{KL}}", // Information Theory
           "\\tv": "\\text{TV}", 
+          "\\ks": "{\\text{KS}}",
 
           "\\calE": "\\mathcal{E}", // Cals 
           "\\calA": "\\mathcal{A}",
