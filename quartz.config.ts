@@ -9,6 +9,7 @@ import * as Plugin from "./quartz/plugins"
 const config: QuartzConfig = {
   configuration: {
     pageTitle: "The Stats Map",
+    pageTitleSuffix: "Suffix",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
