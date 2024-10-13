@@ -17,7 +17,7 @@ export default (() => {
     const path = url.pathname as FullSlug
     const baseDir = fileData.slug === "404" ? path : pathToRoot(fileData.slug!)
 
-    const iconPath = joinSegments(baseDir, "static/favicon.png")
+    const iconPath = joinSegments(baseDir, "static/math_zettel.jpeg")
     const ogImagePath = `https://${cfg.baseUrl}/static/math_zettel.jpeg`
 
     return (
@@ -51,7 +51,7 @@ export default (() => {
         <meta name="twitter:image" content={ogImagePath} />
 
         {/* Google  */}
-        <meta name="keywords" content="statistics, zettelkasten, machine learning" />
+        <meta name="keywords" content="statistics, zettelkasten, machine learning, probability" />
         <meta name="author" content="Ben Chugg" />
         <meta name="copyright" content="Ben Chugg" />
         <meta name="application-name" content="The Stats Map" />
