@@ -75,13 +75,14 @@ a {
   font-weight: $semiBoldWeight;
   text-decoration: none;
   transition: color 0.2s ease;
-  color: var(--secondary);
+  //color: var(--secondary);
 
   &:hover {
     color: var(--tertiary) !important;
   }
 
   &.internal {
+    color: var(--secondary);
     text-decoration: none;
     background-color: var(--highlight);
     padding: 0 0.1rem;
@@ -108,6 +109,10 @@ a {
       fill: var(--dark);
     }
   }
+}
+
+a.external {
+  color: darkcyan;
 }
 
 .desktop-only {
