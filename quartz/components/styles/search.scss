@@ -3,8 +3,11 @@
 .search {
   min-width: fit-content;
   max-width: 14rem;
+  display: block;
   @media all and ($mobile) {
-    flex-grow: 0.3;
+    // flex-grow: 0.3;
+    width: 100%;
+    padding-top: 20px;
   }
 
   & > .search-button {
