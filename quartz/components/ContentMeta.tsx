@@ -46,7 +46,7 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
 
       return (
         <p show-comma={options.showComma} class={classNames(displayClass, "content-meta")}>
-          Last modified {segmentsElements} 
+          Modified {segmentsElements} 
         </p>
       )
     } else {
