@@ -111,6 +111,7 @@ const config: QuartzConfig = {
           "\\Ber": "\\textnormal{Ber}",
           "\\Mspace": "\\mathcal{M}({#1})",
           "\\equald": "\\overset{d}{=}",
+          "\\unif": "\\text{Unif}",
 
           "\\kl": "D_{\\text{KL}}", // Information Theory
           "\\tv": "\\text{TV}", 
