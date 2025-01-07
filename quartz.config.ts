@@ -93,7 +93,7 @@ const config: QuartzConfig = {
           "\\ball": "\\mathbb{B}",
           "\\sphere": "\\mathbb{S}",
           "\\dball": "\\ball^{d-1}",
-          "\\norm": "\\left|{#1}\\right|",
+          "\\norm": "\\left\\|{#1}\\right\\|",
           "\\image": "\\text{image}",
           "\\lap": "\\text{Lap}",
 
