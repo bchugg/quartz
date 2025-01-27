@@ -10,9 +10,8 @@ export default (() => {
     const rawTitle =
       (fileData.frontmatter?.title ?? i18n(cfg.locale).propertyDefaults.title) + titleSuffix
     const title = toTitleCase(rawTitle)
-    const description = "Evergreen notes on statistics, probability, and machine learning."
-    // const description = 
-    //   fileData.description?.trim() ?? i18n(cfg.locale).propertyDefaults.description
+    const description = 
+      fileData.description?.trim() ?? i18n(cfg.locale).propertyDefaults.description
     const { css, js } = externalResources
 
     const url = new URL(`https://${cfg.baseUrl ?? "example.com"}`)
