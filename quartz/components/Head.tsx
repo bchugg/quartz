@@ -35,6 +35,9 @@ export default (() => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href={iconPath} />
         <meta name="description" content={description} />
+        
+        {/* Google Search Console */}
+        <meta name="google-site-verification" content="mMBmmV8lWKHN2V-_dTNc7S0er6D56SswQpfKDmhfJlA" />
 
         {/* FB OG protocol */}
         <meta property="og:title" content={title} />
