@@ -3,6 +3,7 @@ import { FullSlug, joinSegments, pathToRoot } from "../util/path"
 import { JSResourceToScriptElement, toTitleCase } from "../util/resources"
 import { googleFontHref } from "../util/theme"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
+import { formatDate, getDate } from "./Date"
 
 export default (() => {
   const Head: QuartzComponent = ({ cfg, fileData, externalResources }: QuartzComponentProps) => {
@@ -20,6 +21,8 @@ export default (() => {
 
     const iconPath = joinSegments(baseDir, "static/math_zettel.jpeg")
     const ogImagePath = `https://${cfg.baseUrl}/static/math_zettel.jpeg`
+
+    const date = formatDate(getDate(cfg, fileData)!, cfg.locale)
 
     return (
       <head>
@@ -59,6 +62,12 @@ export default (() => {
         <meta name="author" content="Ben Chugg" />
         <meta name="copyright" content="Ben Chugg" />
         <meta name="application-name" content="The Stats Map" />
+
+        {/* Dublin Core metadata for Zotero */}
+        <meta property="dc:title" content={title}/>
+        <meta property="dc:creator" content="Ben Chugg" />
+        <meta property="dc:date" content={date}/>
+        <meta property="dc:source" content={title} />
 
         <meta name="generator" content="Quartz" />
         {css.map((href) => (
