@@ -22,7 +22,7 @@ export default (() => {
     const iconPath = joinSegments(baseDir, "static/math_zettel.jpeg")
     const ogImagePath = `https://${cfg.baseUrl}/static/math_zettel.jpeg`
 
-    const date = formatDate(getDate(cfg, fileData)!, cfg.locale)
+    const date = getDate(cfg, fileData) ? formatDate(getDate(cfg, fileData)!, cfg.locale) : undefined
 
     return (
       <head>
