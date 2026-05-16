@@ -44,9 +44,11 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
 
       const segmentsElements = segments.map((segment) => <span>{segment}</span>)
 
+      const label = fileData.slug === "index" ? "This page last modified" : "Modified"
+
       return (
-        <p show-comma={options.showComma} class={classNames(displayClass, "content-meta")}>
-          Modified {segmentsElements} 
+        <p show-comma={options.showComma} class={classNames(displayClass, "content-meta")} style={fileData.slug === "index" ? "margin-top: 0" : ""}>
+          {label} {segmentsElements}
         </p>
       )
     } else {
