@@ -10,14 +10,35 @@
     padding-left: 0;
 
     & > li {
-      margin: 1rem 0;
+      margin: 0.35rem 0;
+      .section {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 0.5rem;
+      }
+
       .section > .desc > h3 > a {
-        background-color: transparent;
+        background-color: transparent !important;
+        font-size: 0.85rem;
+        font-weight: normal;
+        color: var(--secondary) !important;
+        opacity: 1 !important;
+        &:visited {
+          color: var(--secondary) !important;
+          opacity: 1 !important;
+        }
+        &:hover {
+          color: var(--tertiary) !important;
+        }
       }
 
       .section > .meta {
-        margin: 0 0 0.5rem 0;
+        margin: 0;
         opacity: 0.6;
+        font-size: 0.85rem;
+        white-space: nowrap;
       }
     }
   }

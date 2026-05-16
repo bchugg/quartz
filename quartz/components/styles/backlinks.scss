@@ -2,7 +2,8 @@
 
 .backlinks {
   @media all and not ($mobile) {
-    overflow-y: auto;
+    flex-shrink: 0;
+    position: relative;
     display: flex;
     flex-direction: column;
     &:after {
@@ -25,6 +26,7 @@
 
     a {
       font-weight: normal;
+      font-size: 0.85rem;
     }
 
     & > ul {
