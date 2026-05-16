@@ -14,6 +14,10 @@ git add content
 git commit -m "update content"
 ```
 
+## Deployment
+
+Pushing to `main` on GitHub automatically deploys to the live site — no manual step required.
+
 ## Dev server
 
 ```bash
